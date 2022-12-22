@@ -6,10 +6,7 @@ import { Products } from './Products'
 export const Prodct = () => {
  
   const [product , setProduct] = useState([])
-
   const {id , name} = useParams()
-//  console.log(id)
- 
  useEffect(()=>
  {
   if(id)
@@ -18,14 +15,9 @@ export const Prodct = () => {
     .then((res)=> res.json())
     .then((data)=> setProduct(data))
   }
-
  },[id])
   return (
-    <div>Prodct
-      {/* <h2>Roynig name {id} {product.id} </h2>
-     
-       <h2>{product.name}</h2> */}
-    
+    <div>
     </div>
   )
 }
